@@ -1,0 +1,149 @@
+.my-photo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 300px;
+}
+
+.my-photo {
+  width: 800px;
+  text-align: right;
+}
+
+.navigation {
+  text-align: center;
+}
+
+.my-fio h3 {
+  margin: 0;
+}
+
+.my-fio h3::first-letter {
+  color: rgb(244, 34, 95);
+}
+
+.info {
+  width: 800px;
+  line-height: 50px;
+}
+
+.skills {
+  text-align: left;
+  width: 300px;
+}
+
+body {
+  background-image: url("../img/contemporary-office.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0; /* Добавлено для устранения отступов */
+  padding: 0; /* Добавлено для устранения отступов */
+}
+
+body::before {
+  content: "";
+  position: fixed; /* Изменено на fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.info h1 {
+  font-size: 70px;
+}
+
+.help {
+  width: 50px;
+}
+
+.navigation h3 {
+  font-size: 30px;
+}
+
+.header {
+  font-size: 30px;
+}
+
+.table-header {
+  width: 100%;
+}
+
+.table-header td:nth-child(1) {
+  width: 15%;
+}
+
+.table-header td:nth-child(2) {
+  width: 55%;
+}
+
+.table-header td:nth-child(3) {
+  width: 10%;
+}
+
+.table-header td:nth-child(4) {
+  width: 10%;
+}
+
+.about-me {
+  padding-top: 400px;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.about-me h1,
+.contacts h1,
+.contacts h2 {
+  text-align: center;
+}
+
+.about-me p {
+  text-align: justify;
+}
+
+.contacts {
+  padding-top: 200px;
+}
+
+.bigger {
+  display: inline-block;
+  background: rgb(244, 34, 95);
+  transition-duration: 300ms;
+  transition-property: transform, background-color;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .bigger:hover {
+    transform: scale(1.5);
+  }
+}
