@@ -34,6 +34,7 @@ body {
 
 .my-fio h3::first-letter {
   color: rgb(244, 34, 95);
+  font-weight: bold;
 }
 
 .info {
